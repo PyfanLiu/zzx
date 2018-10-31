@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+ext {
+    compileSdkVersion        = 27
+//    buildToolsVersion        = "27.1.1"
+    minSdkVersion            = 19
+    targetSdkVersion         = 27
+    androidSupportVersion    = '27.1.1'
+    retrofit                 = '2.3.0'
+    greendao                 = '3.2.2'
+    eventBus                 = '3.1.1'
+//    rxjava                   = '2.1.0'
+    rxjava                   = '1.1.5'
+//    rxandroid                = '2.0.1'
+    rxandroid                = '1.2.0'
+    glide                    = '4.3.1'
+    dbName                   = '"zzx.db"'
+    endPoint                 = '"https://app.harkhark.com.au/"'   //'"http://v3.harkhark.cn/   https://app.harkhark.com.au/"'
+    seEndPoint               = '" https://www.easy-mock.com/mock/5b2b5100438f2e082792c6d1/"'
+    endPoinTravel            = '"https://travel.harkhark.com.au/app/"'
+    endNewTravel             = '"https://travel.harkhark.com.au/"'//https://travel.harkhark.com.au/   http://travel3.harkhark.cn/
+    authToken                = '"ff120fe191c3177e812d9adeb646bb64"'
+    endFood                  = '"https://app.harkhark.com.au/api5/"'
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
