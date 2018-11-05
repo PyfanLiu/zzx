@@ -30,7 +30,8 @@ ext {
     rxandroid                = '1.2.0'
     glide                    = '4.3.1'
     dbName                   = '"zzx.db"'
-    endPoint                 = '"https://app.harkhark.com.au/"'   //'"http://v3.harkhark.cn/   https://app.harkhark.com.au/"'
+    endPoint                 = '"http://192.168.2.2:8700"'
+    //'"http://192.168.2.2:8700"'   '"https://rplatform.mengmashiji.com"'
     seEndPoint               = '" https://www.easy-mock.com/mock/5b2b5100438f2e082792c6d1/"'
     endPoinTravel            = '"https://travel.harkhark.com.au/app/"'
     endNewTravel             = '"https://travel.harkhark.com.au/"'//https://travel.harkhark.com.au/   http://travel3.harkhark.cn/
